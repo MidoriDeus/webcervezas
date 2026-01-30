@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Mesa de bar -->
+  <rect x="50" y="100" width="700" height="350" rx="20" ry="20" fill="#8b4513"/>
+  <rect x="50" y="100" width="700" height="30" fill="#5d4037"/>
+  
+  <!-- Textura de madera -->
+  <g stroke="#5d4037" stroke-width="1" opacity="0.3">
+    <line x1="50" y1="110" x2="750" y2="110"/>
+    <line x1="50" y1="130" x2="750" y2="130"/>
+    <line x1="50" y1="150" x2="750" y2="150"/>
+    <line x1="50" y1="170" x2="750" y2="170"/>
+    <line x1="50" y1="190" x2="750" y2="190"/>
+    <line x1="50" y1="210" x2="750" y2="210"/>
+    <line x1="50" y1="230" x2="750" y2="230"/>
+    <line x1="50" y1="250" x2="750" y2="250"/>
+    <line x1="50" y1="270" x2="750" y2="270"/>
+    <line x1="50" y1="290" x2="750" y2="290"/>
+    <line x1="50" y1="310" x2="750" y2="310"/>
+    <line x1="50" y1="330" x2="750" y2="330"/>
+    <line x1="50" y1="350" y2="750" y2="350"/>
+    <line x1="50" y1="370" x2="750" y2="370"/>
+    <line x1="50" y1="390" x2="750" y2="390"/>
+    <line x1="50" y1="410" x2="750" y2="410"/>
+  </g>
+  
+  <!-- Vasos y cervezas en la mesa -->
+  
+  <!-- Jarra de cerveza tipo pint -->
+  <g transform="translate(150, 200)">
+    <path d="M15,20 L25,180 L35,180 L45,20 Z" fill="#f5deb3"/>
+    <path d="M15,20 Q25,10 35,15 Q45,10 50,20 Q45,12 40,10 Q30,8 20,10 Q15,12 15,20" fill="#fff8e1"/>
+    <path d="M20,25 L25,175 L35,175 L40,25 Z" fill="#ffd700"/>
+    <circle cx="30" cy="50" r="2" fill="#fff"/>
+    <circle cx="32" cy="70" r="1.5" fill="#fff"/>
+    <circle cx="28" cy="90" r="1.8" fill="#fff"/>
+  </g>
+  
+  <!-- Copa de vino tinto -->
+  <g transform="translate(250, 220)">
+    <path d="M20,30 L25,150 L35,150 L40,30 Z" fill="none" stroke="#d3d3d3" stroke-width="3"/>
+    <ellipse cx="30" cy="25" rx="15" ry="5" fill="#d3d3d3"/>
+    <ellipse cx="30" cy="160" rx="8" ry="15" fill="#800000"/>
+    <ellipse cx="30" cy="160" rx="10" ry="8" fill="#a52a2a"/>
+  </g>
+  
+  <!-- Copa de cerveza tipo weizen -->
+  <g transform="translate(350, 180)">
+    <path d="M10,40 L20,200 L40,200 L50,40 Z" fill="#f5deb3"/>
+    <path d="M10,40 Q30,20 50,40 Q45,30 30,25 Q15,30 10,40" fill="#fff8e1"/>
+    <path d="M15,45 L22,195 L43,195 L50,45 Z" fill="#ffec8b"/>
+    <circle cx="32" cy="70" r="1.5" fill="#fff"/>
+    <circle cx="34" cy="90" r="1" fill="#fff"/>
+    <circle cx="30" cy="110" r="1.2" fill="#fff"/>
+    <circle cx="33" cy="130" r="1.5" fill="#fff"/>
+    <circle cx="31" cy="150" r="1" fill="#fff"/>
+  </g>
+  
+  <!-- Vasija de cerveza tipo chopp -->
+  <g transform="translate(450, 210)">
+    <path d="M20,20 L30,170 L40,170 L50,20 Z" fill="#f5deb3"/>
+    <path d="M20,20 Q35,5 50,20 Q45,12 35,10 Q25,12 20,20" fill="#fff8e1"/>
+    <path d="M23,25 L30,165 L47,165 L50,25 Z" fill="#d2691e"/>
+    <circle cx="35" cy="50" r="1.8" fill="#fff"/>
+    <circle cx="37" cy="70" r="1.2" fill="#fff"/>
+    <circle cx="33" cy="90" r="1.5" fill="#fff"/>
+  </g>
+  
+  <!-- Copa de cerveza tipo pilsner -->
+  <g transform="translate(550, 190)">
+    <path d="M15,30 L25,190 L35,190 L45,30 Z" fill="#f5deb3"/>
+    <path d="M15,30 Q30,15 45,30 Q40,22 30,20 Q20,22 15,30" fill="#fff8e1"/>
+    <path d="M18,35 L25,185 L42,185 L45,35 Z" fill="#ffec8b"/>
+    <circle cx="30" cy="60" r="1.5" fill="#fff"/>
+    <circle cx="32" cy="80" r="1" fill="#fff"/>
+    <circle cx="28" cy="100" r="1.2" fill="#fff"/>
+    <circle cx="31" cy="120" r="1.5" fill="#fff"/>
+    <circle cx="29" cy="140" r="1" fill="#fff"/>
+  </g>
+  
+  <!-- Vasija de cerveza stout -->
+  <g transform="translate(650, 200)">
+    <path d="M15,20 L25,180 L35,180 L45,20 Z" fill="#f5deb3"/>
+    <path d="M15,20 Q25,10 35,15 Q45,10 50,20 Q45,12 40,10 Q30,8 10,10 Q15,12 15,20" fill="#fff8e1"/>
+    <path d="M20,25 L25,175 L35,175 L40,25 Z" fill="#1c1c1c"/>
+    <ellipse cx="30" cy="18" rx="6" ry="2" fill="#ffffff" opacity="0.8"/>
+  </g>
+  
+  <!-- Plato pequeño con snacks -->
+  <g transform="translate(200, 350)">
+    <circle cx="0" cy="0" r="30" fill="#d2b48c"/>
+    <circle cx="-10" cy="-5" r="8" fill="#cd853f"/>
+    <circle cx="12" cy="-8" r="6" fill="#cd853f"/>
+    <circle cx="0" cy="10" r="7" fill="#cd853f"/>
+    <circle cx="15" cy="12" r="5" fill="#cd853f"/>
+  </g>
+  
+  <!-- Servilleta -->
+  <g transform="translate(400, 350)">
+    <rect x="-30" y="-20" width="60" height="40" fill="#fff8dc" stroke="#ccc" stroke-width="1"/>
+    <text x="0" y="5" font-family="Arial" font-size="12" fill="#8b4513" text-anchor="middle">CRAFT</text>
+  </g>
+  
+  <!-- Decoración de bar -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="150" height="50" fill="#5d4037" stroke="#3e2723" stroke-width="2"/>
+    <text x="75" y="30" font-family="Arial" font-size="16" fill="#ffec8b" text-anchor="middle">GALERÍA</text>
+  </g>
+  
+  <!-- Botellas en la parte trasera -->
+  <g transform="translate(600, 50)">
+    <rect x="0" y="0" width="15" height="100" fill="#1c1c1c"/>
+    <rect x="25" y="0" width="15" height="100" fill="#d2691e"/>
+    <rect x="50" y="0" width="15" height="100" fill="#ffd700"/>
+    <rect x="75" y="0" width="15" height="100" fill="#ffec8b"/>
+    <rect x="100" y="0" width="15" height="100" fill="#8b4513"/>
+  </g>
+  
+  <!-- Iluminación ambiente -->
+  <circle cx="400" cy="50" r="100" fill="#ffec8b" opacity="0.1"/>
+  <circle cx="200" cy="80" r="70" fill="#ffec8b" opacity="0.08"/>
+  <circle cx="600" cy="100" r="80" fill="#ffec8b" opacity="0.08"/>
+</svg>

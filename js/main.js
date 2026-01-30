@@ -122,7 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('animate');
-                observer.unobserve(entry.target);
+                // No dejar de observar para que funcione en múltiples entradas/salidas
+                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
@@ -130,6 +131,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Observar elementos para animaciones
     document.querySelectorAll('.beer-card, .review, .experience-item').forEach(el => {
         observer.observe(el);
+    });
+
+    // Observar secciones para animaciones de entrada
+    document.querySelectorAll('section:not(.hero)').forEach(section => {
+        observer.observe(section);
     });
 
     // Funcionalidad para la galería (lightbox simple)

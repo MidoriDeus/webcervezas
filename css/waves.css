@@ -1,0 +1,122 @@
+/* Efecto de olas de cerveza */
+.beer-waves {
+  position: relative;
+  overflow: hidden;
+}
+
+.beer-waves::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,0V40Q300,120 600,40T1200,120V0Z" fill="rgba(255, 191, 0, 0.1)"/><path d="M0,0V60Q300,100 600,60T1200,100V0Z" fill="rgba(255, 191, 0, 0.15)"/></svg>');
+  background-size: 1200px 120px;
+  animation: wave-animation 12s linear infinite;
+  z-index: -1;
+}
+
+/* Efecto de burbujas de cerveza */
+.bubbles {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.bubbles::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.1) 3px, transparent 3px),
+    radial-gradient(circle at 40% 50%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 60% 20%, rgba(255, 255, 255, 0.1) 4px, transparent 4px),
+    radial-gradient(circle at 30% 80%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 70% 40%, rgba(255, 255, 255, 0.1) 3px, transparent 3px),
+    radial-gradient(circle at 10% 60%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 90% 10%, rgba(255, 255, 255, 0.1) 3px, transparent 3px);
+  background-repeat: repeat-x;
+  background-size: 200px 200px;
+  animation: bubble-animation 8s linear infinite;
+  z-index: -1;
+}
+
+/* Animaciones */
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-25%) translateY(-5px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes bubble-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+/* Burbujas flotantes dinámicas */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #000;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Efecto de espuma de cerveza */
+.foam-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.foam-effect::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(255, 251, 240, 0.3) 2px, transparent 2px),
+    radial-gradient(circle at 30% 40%, rgba(255, 251, 240, 0.3) 3px, transparent 3px),
+    radial-gradient(circle at 50% 60%, rgba(255, 251, 240, 0.3) 2px, transparent 2px),
+    radial-gradient(circle at 70% 80%, rgba(255, 251, 240, 0.3) 4px, transparent 4px),
+    radial-gradient(circle at 90% 10%, rgba(255, 251, 240, 0.3) 2px, transparent 2px);
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  animation: foam-animation 15s linear infinite alternate;
+  z-index: -1;
+}
+
+@keyframes foam-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, -5px);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  75% {
+    transform: translate(5px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

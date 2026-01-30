@@ -1,0 +1,346 @@
+/* FONDOS DE MADERA DETALLADOS */
+.wood-background {
+  background: 
+    /* Capa superior - vetas finas */
+    repeating-linear-gradient(
+      90deg,
+      rgba(101, 67, 33, 0.1) 0px,
+      rgba(101, 67, 33, 0.1) 1px,
+      transparent 1px,
+      transparent 10px
+    ),
+    /* Capa media - vetas medianas */
+    repeating-linear-gradient(
+      45deg,
+      rgba(139, 69, 19, 0.1) 0px,
+      rgba(139, 69, 19, 0.1) 2px,
+      transparent 2px,
+      transparent 20px
+    ),
+    /* Capa inferior - base de madera oscura */
+    linear-gradient(45deg, #4e342e 0%, #3e2723 100%);
+  background-size: 100px 100px, 200px 200px, 100% 100%;
+  position: relative;
+}
+
+.wood-texture-detailed {
+  position: relative;
+  overflow: hidden;
+}
+
+.wood-texture-detailed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(184, 115, 51, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 30% 40%, rgba(184, 115, 51, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 50% 60%, rgba(184, 115, 51, 0.1) 1px, transparent 1px),
+    radial-gradient(circle at 70% 80%, rgba(184, 115, 51, 0.1) 3px, transparent 3px),
+    radial-gradient(circle at 90% 10%, rgba(184, 115, 51, 0.1) 2px, transparent 2px);
+  background-size: 100px 100px;
+  pointer-events: none;
+}
+
+/* EFECTOS DE ESPUMA */
+.beer-foam-top {
+  position: relative;
+}
+
+.beer-foam-top::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: 
+    radial-gradient(circle at 10% 0%, rgba(255, 251, 240, 0.8) 8px, transparent 8px),
+    radial-gradient(circle at 30% 0%, rgba(255, 251, 240, 0.8) 12px, transparent 12px),
+    radial-gradient(circle at 50% 0%, rgba(255, 251, 240, 0.8) 10px, transparent 10px),
+    radial-gradient(circle at 70% 0%, rgba(255, 251, 240, 0.8) 14px, transparent 14px),
+    radial-gradient(circle at 90% 0%, rgba(255, 251, 240, 0.8) 11px, transparent 11px);
+  animation: foam-float 8s ease-in-out infinite;
+}
+
+@keyframes foam-float {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+/* EFECTOS DE OLAS DE CERVEZA */
+.beer-wave-divider {
+  position: relative;
+  overflow: hidden;
+}
+
+.beer-wave-divider::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: 
+    radial-gradient(ellipse at 20% 0%, rgba(255, 191, 0, 0.3) 20px, transparent 20px),
+    radial-gradient(ellipse at 40% 0%, rgba(255, 191, 0, 0.3) 25px, transparent 25px),
+    radial-gradient(ellipse at 60% 0%, rgba(255, 191, 0, 0.3) 22px, transparent 22px),
+    radial-gradient(ellipse at 80% 0%, rgba(255, 191, 0, 0.3) 28px, transparent 28px);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  animation: wave-sway 12s ease-in-out infinite;
+}
+
+@keyframes wave-sway {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(-20px) translateY(-5px);
+  }
+  50% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateX(20px) translateY(-5px);
+  }
+}
+
+/* EFECTOS DE BURBUJAS */
+.bubble-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -20px;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 251, 240, 0.7);
+  border-radius: 50%;
+  animation: bubble-rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+  left: 5%;
+  animation-delay: 0s;
+  width: 6px;
+  height: 6px;
+}
+
+.bubble:nth-child(2) {
+  left: 15%;
+  animation-delay: 2s;
+  width: 10px;
+  height: 10px;
+}
+
+.bubble:nth-child(3) {
+  left: 25%;
+  animation-delay: 4s;
+  width: 7px;
+  height: 7px;
+}
+
+.bubble:nth-child(4) {
+  left: 35%;
+  animation-delay: 1s;
+  width: 9px;
+  height: 9px;
+}
+
+.bubble:nth-child(5) {
+  left: 45%;
+  animation-delay: 3s;
+  width: 12px;
+  height: 12px;
+}
+
+.bubble:nth-child(6) {
+  left: 55%;
+  animation-delay: 5s;
+  width: 8px;
+  height: 8px;
+}
+
+.bubble:nth-child(7) {
+  left: 65%;
+  animation-delay: 2s;
+  width: 11px;
+  height: 11px;
+}
+
+.bubble:nth-child(8) {
+  left: 75%;
+  animation-delay: 4s;
+  width: 7px;
+  height: 7px;
+}
+
+.bubble:nth-child(9) {
+  left: 85%;
+  animation-delay: 1s;
+  width: 10px;
+  height: 10px;
+}
+
+.bubble:nth-child(10) {
+  left: 95%;
+  animation-delay: 3s;
+  width: 9px;
+  height: 9px;
+}
+
+@keyframes bubble-rise {
+  0% {
+    bottom: -20px;
+    transform: translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    bottom: 100%;
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+/* EFECTOS GLASSMORPHISM CÁLIDO */
+.glass-card {
+  background: 
+    linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 248, 225, 0.1) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, 
+    transparent 0%, 
+    rgba(255, 191, 0, 0.05) 50%, 
+    transparent 100%);
+  pointer-events: none;
+}
+
+/* HOVER EFFECTS CON SENSACIÓN LÍQUIDA */
+.liquid-hover {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+}
+
+.liquid-hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, 
+    rgba(255, 191, 0, 0) 0%, 
+    rgba(255, 191, 0, 0) 70%, 
+    rgba(255, 191, 0, 0.1) 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.liquid-hover:hover::after {
+  opacity: 1;
+}
+
+/* EFECTOS DE PARALLAX LEVE */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* EFECTOS DE TRANSICIÓN ENTRE SECCIONES */
+.section-transition {
+  position: relative;
+}
+
+.section-transition::before {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: 
+    radial-gradient(ellipse at 10% 100%, rgba(255, 191, 0, 0.1) 30px, transparent 30px),
+    radial-gradient(ellipse at 30% 100%, rgba(255, 191, 0, 0.1) 35px, transparent 35px),
+    radial-gradient(ellipse at 50% 100%, rgba(255, 191, 0, 0.1) 32px, transparent 32px),
+    radial-gradient(ellipse at 70% 100%, rgba(255, 191, 0, 0.1) 38px, transparent 38px),
+    radial-gradient(ellipse at 90% 100%, rgba(255, 191, 0, 0.1) 34px, transparent 34px);
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+  animation: wave-flow 15s ease-in-out infinite;
+}
+
+@keyframes wave-flow {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+}
+
+/* EFECTOS DE ANIMACIÓN SUAVES */
+.smooth-animation {
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* EFECTOS PARA EL MODO DE MOVIMIENTO REDUCIDO */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .bubble {
+    animation-play-state: paused;
+  }
+  
+  .beer-foam-top::before {
+    animation-play-state: paused;
+  }
+  
+  .beer-wave-divider::before {
+    animation-play-state: paused;
+  }
+  
+  .section-transition::before {
+    animation-play-state: paused;
+  }
+}

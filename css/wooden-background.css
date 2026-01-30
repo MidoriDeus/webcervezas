@@ -1,0 +1,96 @@
+/* Fondo de madera con efectos de gradiente que cambian al hacer scroll */
+
+.wooden-background {
+  background-image: 
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><rect width="100%" height="100%" fill="%238B4513"/><rect x="0" y="0" width="400" height="2" fill="%23A0522D"/><rect x="0" y="10" width="400" height="2" fill="%23A0522D"/><rect x="0" y="20" width="400" height="2" fill="%23A0522D"/><rect x="0" y="30" width="400" height="2" fill="%23A0522D"/><rect x="0" y="40" width="400" height="2" fill="%23A0522D"/><rect x="0" y="50" width="400" height="2" fill="%23A0522D"/><rect x="0" y="60" width="400" height="2" fill="%23A0522D"/><rect x="0" y="70" width="400" height="2" fill="%23A0522D"/><rect x="0" y="80" width="400" height="2" fill="%23A0522D"/><rect x="0" y="90" width="400" height="2" fill="%23A0522D"/><rect x="0" y="100" width="400" height="2" fill="%23A0522D"/><rect x="0" y="110" width="400" height="2" fill="%23A0522D"/><rect x="0" y="120" width="400" height="2" fill="%23A0522D"/><rect x="0" y="130" width="400" height="2" fill="%23A0522D"/><rect x="0" y="140" width="400" height="2" fill="%23A0522D"/><rect x="0" y="150" width="400" height="2" fill="%23A0522D"/><rect x="0" y="160" width="400" height="2" fill="%23A0522D"/><rect x="0" y="170" width="400" height="2" fill="%23A0522D"/><rect x="0" y="180" width="400" height="2" fill="%23A0522D"/><rect x="0" y="190" width="400" height="2" fill="%23A0522D"/><rect x="0" y="200" width="400" height="2" fill="%23A0522D"/><rect x="0" y="210" width="400" height="2" fill="%23A0522D"/><rect x="0" y="220" width="400" height="2" fill="%23A0522D"/><rect x="0" y="230" width="400" height="2" fill="%23A0522D"/><rect x="0" y="240" width="400" height="2" fill="%23A0522D"/><rect x="0" y="250" width="400" height="2" fill="%23A0522D"/><rect x="0" y="260" width="400" height="2" fill="%23A0522D"/><rect x="0" y="270" width="400" height="2" fill="%23A0522D"/><rect x="0" y="280" width="400" height="2" fill="%23A0522D"/><rect x="0" y="290" width="400" height="2" fill="%23A0522D"/><rect x="0" y="300" width="400" height="2" fill="%23A0522D"/><rect x="0" y="310" width="400" height="2" fill="%23A0522D"/><rect x="0" y="320" width="400" height="2" fill="%23A0522D"/><rect x="0" y="330" width="400" height="2" fill="%23A0522D"/><rect x="0" y="340" width="400" height="2" fill="%23A0522D"/><rect x="0" y="350" width="400" height="2" fill="%23A0522D"/><rect x="0" y="360" width="400" height="2" fill="%23A0522D"/><rect x="0" y="370" width="400" height="2" fill="%23A0522D"/><rect x="0" y="380" width="400" height="2" fill="%23A0522D"/><rect x="0" y="390" width="400" height="2" fill="%23A0522D"/><rect x="0" y="398" width="400" height="2" fill="%23A0522D"/><circle cx="50" cy="30" r="8" fill="%235D2906" opacity="0.6"/><circle cx="150" cy="70" r="12" fill="%235D2906" opacity="0.6"/><circle cx="250" cy="120" r="10" fill="%235D2906" opacity="0.6"/><circle cx="350" cy="180" r="15" fill="%235D2906" opacity="0.6"/><circle cx="100" cy="250" r="11" fill="%235D2906" opacity="0.6"/><circle cx="300" cy="320" r="9" fill="%235D2906" opacity="0.6"/><circle cx="200" cy="370" r="13" fill="%235D2906" opacity="0.6"/><line x1="0" y1="0" x2="400" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="50" x2="350" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="100" x2="300" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="150" x2="250" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="200" x2="200" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="250" x2="150" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="300" x2="100" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/><line x1="0" y1="350" x2="50" y2="400" stroke="%23A0522D" stroke-width="0.5" opacity="0.2"/></svg>'),
+    linear-gradient(to bottom, rgba(139, 69, 19, 0.8), rgba(160, 82, 45, 0.8));
+  background-size: 400px 400px, 100% 100%;
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto de gradiente que cambia al hacer scroll */
+.scrolling-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    #8B4513 0%,
+    #A0522D 25%,
+    #CD853F 50%,
+    #D2B48C 75%,
+    #F5DEB3 100%
+  );
+  opacity: 0.3;
+  transition: background 0.5s ease;
+}
+
+/* Clases para diferentes tonos de madera */
+.wood-tone-light {
+  background: linear-gradient(45deg, #D2B48C, #F5DEB3, #DEB887);
+}
+
+.wood-tone-medium {
+  background: linear-gradient(45deg, #A0522D, #CD853F, #D2691E);
+}
+
+.wood-tone-dark {
+  background: linear-gradient(45deg, #5D2906, #8B4513, #A0522D);
+}
+
+/* Efecto de profundidad en secciones */
+.section-depth {
+  position: relative;
+}
+
+.section-depth::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(139, 69, 19, 0.1) 0%,
+    rgba(160, 82, 45, 0.2) 50%,
+    rgba(93, 41, 6, 0.3) 100%
+  );
+  pointer-events: none;
+}
+
+/* Efecto de madera en tarjetas */
+.wooden-card {
+  background: 
+    linear-gradient(45deg, rgba(210, 180, 140, 0.1), rgba(160, 82, 45, 0.1)),
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="100%" height="100%" fill="%238B4513" opacity="0.1"/><rect x="0" y="0" width="200" height="1" fill="%23A0522D" opacity="0.3"/><rect x="0" y="10" width="200" height="1" fill="%23A0522D" opacity="0.3"/><rect x="0" y="20" width="200" height="1" fill="%23A0522D" opacity="0.3"/><circle cx="25" cy="15" r="4" fill="%235D2906" opacity="0.2"/></svg>');
+  background-size: 100% 100%, 200px 200px;
+  border: 1px solid rgba(139, 69, 19, 0.3);
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
+}
+
+/* Efecto de madera con movimiento sutil */
+.wooden-animated {
+  background: 
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400"><rect width="100%" height="100%" fill="%238B4513"/><rect x="0" y="0" width="400" height="2" fill="%23A0522D"/><rect x="0" y="10" width="400" height="2" fill="%23A0522D"/><rect x="0" y="20" width="400" height="2" fill="%23A0522D"/><rect x="0" y="30" width="400" height="2" fill="%23A0522D"/><rect x="0" y="40" width="400" height="2" fill="%23A0522D"/><rect x="0" y="50" width="400" height="2" fill="%23A0522D"/><rect x="0" y="60" width="400" height="2" fill="%23A0522D"/><rect x="0" y="70" width="400" height="2" fill="%23A0522D"/><rect x="0" y="80" width="400" height="2" fill="%23A0522D"/><rect x="0" y="90" width="400" height="2" fill="%23A0522D"/><rect x="0" y="100" width="400" height="2" fill="%23A0522D"/><rect x="0" y="110" width="400" height="2" fill="%23A0522D"/><rect x="0" y="120" width="400" height="2" fill="%23A0522D"/><rect x="0" y="130" width="400" height="2" fill="%23A0522D"/><rect x="0" y="140" width="400" height="2" fill="%23A0522D"/><rect x="0" y="150" width="400" height="2" fill="%23A0522D"/><rect x="0" y="160" width="400" height="2" fill="%23A0522D"/><rect x="0" y="170" width="400" height="2" fill="%23A0522D"/><rect x="0" y="180" width="400" height="2" fill="%23A0522D"/><rect x="0" y="190" width="400" height="2" fill="%23A0522D"/><rect x="0" y="200" width="400" height="2" fill="%23A0522D"/><rect x="0" y="210" width="400" height="2" fill="%23A0522D"/><rect x="0" y="220" width="400" height="2" fill="%23A0522D"/><rect x="0" y="230" width="400" height="2" fill="%23A0522D"/><rect x="0" y="240" width="400" height="2" fill="%23A0522D"/><rect x="0" y="250" width="400" height="2" fill="%23A0522D"/><rect x="0" y="260" width="400" height="2" fill="%23A0522D"/><rect x="0" y="270" width="400" height="2" fill="%23A0522D"/><rect x="0" y="280" width="400" height="2" fill="%23A0522D"/><rect x="0" y="290" width="400" height="2" fill="%23A0522D"/><rect x="0" y="300" width="400" height="2" fill="%23A0522D"/><rect x="0" y="310" width="400" height="2" fill="%23A0522D"/><rect x="0" y="320" width="400" height="2" fill="%23A0522D"/><rect x="0" y="330" width="400" height="2" fill="%23A0522D"/><rect x="0" y="340" width="400" height="2" fill="%23A0522D"/><rect x="0" y="350" width="400" height="2" fill="%23A0522D"/><rect x="0" y="360" width="400" height="2" fill="%23A0522D"/><rect x="0" y="370" width="400" height="2" fill="%23A0522D"/><rect x="0" y="380" width="400" height="2" fill="%23A0522D"/><rect x="0" y="390" width="400" height="2" fill="%23A0522D"/><rect x="0" y="398" width="400" height="2" fill="%23A0522D"/><circle cx="50" cy="30" r="8" fill="%235D2906" opacity="0.6"/><circle cx="150" cy="70" r="12" fill="%235D2906" opacity="0.6"/><circle cx="250" cy="120" r="10" fill="%235D2906" opacity="0.6"/><circle cx="350" cy="180" r="15" fill="%235D2906" opacity="0.6"/><circle cx="100" cy="250" r="11" fill="%235D2906" opacity="0.6"/><circle cx="300" cy="320" r="9" fill="%235D2906" opacity="0.6"/><circle cx="200" cy="370" r="13" fill="%235D2906" opacity="0.6"/></svg>'),
+    linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(160, 82, 45, 0.9) 100%);
+  background-size: 400px 400px, 100% 100%;
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+  animation: subtleMove 20s ease-in-out infinite;
+}
+
+@keyframes subtleMove {
+  0%, 100% {
+    background-position: 0 0, 0 0;
+  }
+  50% {
+    background-position: 20px 20px, 0 0;
+  }
+}

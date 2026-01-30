@@ -93,7 +93,7 @@ body {
 
 /* Sección Hero */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero-bg.svg');
+  background: linear-gradient(rgba(30, 20, 10, 0.7), rgba(50, 30, 15, 0.9)), url('../images/hero-bg.svg');
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -169,7 +169,7 @@ body {
 /* Sección Nosotros */
 .about {
   padding: var(--section-padding);
-  background-color: white;
+  background: linear-gradient(to bottom, #f5f1e5, #e8dcc5);
 }
 
 .about-content {
@@ -198,7 +198,7 @@ body {
 /* Sección Cervezas */
 .beers {
   padding: var(--section-padding);
-  background-color: var(--light-gray);
+  background: linear-gradient(to bottom, #e8dcc5, #d4c7a5);
 }
 
 .beers h2 {
@@ -267,7 +267,7 @@ body {
 /* Sección Destacados */
 .featured {
   padding: var(--section-padding);
-  background-color: white;
+  background: linear-gradient(to bottom, #d4c7a5, #c0ae8a);
 }
 
 .featured h2 {
@@ -307,7 +307,7 @@ body {
 /* Sección Experiencia */
 .experience {
   padding: var(--section-padding);
-  background-color: var(--light-gray);
+  background: linear-gradient(to bottom, #c0ae8a, #a9946d);
 }
 
 .experience h2 {
@@ -344,14 +344,39 @@ body {
 /* Galería */
 .gallery {
   padding: var(--section-padding);
-  background-color: white;
+  background: linear-gradient(to bottom, #a9946d, #8b7355);
 }
 
 .gallery h2 {
   text-align: center;
   color: var(--dark-brown);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 2.2rem;
+}
+
+.gallery-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-intro p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.gallery-scene {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.gallery-scene img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .gallery-grid {
@@ -375,7 +400,7 @@ body {
 /* Opiniones */
 .reviews {
   padding: var(--section-padding);
-  background-color: var(--light-gray);
+  background: linear-gradient(to bottom, #8b7355, #6b5b47);
 }
 
 .reviews h2 {
@@ -413,7 +438,7 @@ body {
 /* Ubicación */
 .location {
   padding: var(--section-padding);
-  background-color: white;
+  background: linear-gradient(to bottom, #6b5b47, #4b3e2d);
 }
 
 .location h2 {
@@ -449,7 +474,7 @@ body {
 /* Contacto */
 .contact {
   padding: var(--section-padding);
-  background-color: var(--light-gray);
+  background: linear-gradient(to bottom, #4b3e2d, #3e2723);
 }
 
 .contact h2 {
@@ -495,7 +520,7 @@ body {
 /* FAQ */
 .faq {
   padding: var(--section-padding);
-  background-color: white;
+  background: linear-gradient(to bottom, #3e2723, #2c1b18);
 }
 
 .faq h2 {
@@ -557,7 +582,15 @@ body {
   background-color: var(--dark-brown);
   color: white;
   padding: 3rem 0 1rem;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Asegurar que las secciones tengan posición relativa para que los efectos funcionen correctamente */
+.beers, .hero, .about, .featured, .experience, .gallery, .reviews, .location, .contact, .faq {
+  position: relative;
+}
+
 
 .footer-content {
   display: grid;

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Beer Bar | Experiencia Cervecera Premium</title>
+    <meta name="description" content="Descubre cervezas artesanales excepcionales en un ambiente único. Reserva tu experiencia cervecera hoy.">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BarOrPub",
+        "name": "Craft Beer Bar",
+        "description": "Bar de cervezas artesanales premium con ambiente cálido y experiencia única",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Calle Cerveza Artesanal",
+            "addressLocality": "[Ciudad]",
+            "addressRegion": "[Estado]",
+            "postalCode": "12345",
+            "addressCountry": "ES"
+        },
+        "telephone": "+34 123 456 789",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+                "opens": "16:00",
+                "closes": "00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Friday", "Saturday"],
+                "opens": "16:00",
+                "closes": "02:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "12:00",
+                "closes": "22:00"
+            }
+        ],
+        "image": [
+            "https://example.com/images/interior1.jpg",
+            "https://example.com/images/interior2.jpg",
+            "https://example.com/images/beer-selection.jpg"
+        ],
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "reviewCount": "243"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="css/maestro-styles.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/advanced-effects.css">
+    <link rel="stylesheet" href="css/wooden-background.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+</head>
+<body class="wooden-animated">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Craft Beer Bar</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about">Historia</a></li>
+                    <li><a href="#beers">Cervezas</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
+                    <li><a href="#events">Eventos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero wood-background">
+        <div class="hero-background">
+            <div class="wood-texture-detailed"></div>
+            <div class="beer-foam-top"></div>
+            <div class="bubble-container">
+                <!-- Burbujas generadas dinámicamente -->
+            </div>
+        </div>
+        <div class="hero-content">
+            <h2>Experiencia Cervecera Premium</h2>
+            <p>Descubre cervezas artesanales únicas en un ambiente cálido y acogedor. Donde la tradición se encuentra con la innovación.</p>
+            <a href="#beers" class="btn btn-cta liquid-hover">Explorar Catálogo</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about wood-background section-transition">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Nuestra Historia</h2>
+                    <p>Desde 2018, hemos estado creando experiencias alrededor de cervezas artesanales excepcionales y comunidad. Nuestro compromiso con la calidad y la autenticidad nos ha convertido en el destino favorito de los amantes de la buena cerveza.</p>
+                    <p>Trabajamos directamente con cervecerías locales para ofrecerte lo último en innovación cervecera, desde clásicos reconfortantes hasta experimentos audaces que desafían los límites del sabor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beer Catalog Section -->
+    <section id="beers" class="beers beer-wave-divider">
+        <div class="container">
+            <h2>Nuestra Selección de Cervezas</h2>
+            <div class="beer-grid">
+                <div class="beer-card glass-card liquid-hover">
+                    <div class="card-content">
+                        <h3>Hoppy Trails IPA</h3>
+                        <p class="brewery">Cervecería Local</p>
+                        <p class="abv">ABV: 6.8%</p>
+                        <p class="description">Notas cítricas con un amargor equilibrado. Una IPA que celebra los mejores lúpulos.</p>
+                        <button class="btn btn-small">Probar Hoy</button>
+                    </div>
+                </div>
+
+                <div class="beer-card glass-card liquid-hover">
+                    <div class="card-content">
+                        <h3>Dark Roast Stout</h3>
+                        <p class="brewery">Cervecería Regional</p>
+                        <p class="abv">ABV: 5.2%</p>
+                        <p class="description">Sabores intensos de café y chocolate. Un cuerpo cremoso con acabado seco.</p>
+                        <button class="btn btn-small">Probar Hoy</button>
+                    </div>
+                </div>
+
+                <div class="beer-card glass-card liquid-hover">
+                    <div class="card-content">
+                        <h3>Crisp Mountain Lager</h3>
+                        <p class="brewery">Cervecería Local</p>
+                        <p class="abv">ABV: 4.5%</p>
+                        <p class="description">Refrescante y limpia, con un ligero toque maltoso. Perfecta para cualquier ocasión.</p>
+                        <button class="btn btn-small">Probar Hoy</button>
+                    </div>
+                </div>
+
+                <div class="beer-card glass-card liquid-hover">
+                    <div class="card-content">
+                        <h3>Amber Ale</h3>
+                        <p class="brewery">Cervecería Nacional</p>
+                        <p class="abv">ABV: 7.2%</p>
+                        <p class="description">Equilibrio entre dulzor malteado y amargor. Compleja pero accesible.</p>
+                        <button class="btn btn-small">Probar Hoy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience wood-background section-transition">
+        <div class="container">
+            <h2>La Experiencia</h2>
+            <div class="experience-content">
+                <div class="experience-item glass-card liquid-hover">
+                    <h3>Atmósfera Única</h3>
+                    <p>Un ambiente cálido y acogedor donde puedes disfrutar de nuestras cervezas en un entorno especial.</p>
+                </div>
+                <div class="experience-item glass-card liquid-hover">
+                    <h3>Eventos Especiales</h3>
+                    <p>Noches de degustación, música en vivo y eventos exclusivos para nuestros clientes.</p>
+                </div>
+                <div class="experience-item glass-card liquid-hover">
+                    <h3>Selección Rotativa</h3>
+                    <p>Siempre hay algo nuevo que probar con nuestra selección rotativa de cervezas artesanales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events beer-wave-divider">
+        <div class="container">
+            <h2>Eventos y Promociones</h2>
+            <div class="events-board">
+                <div class="event-item glass-card liquid-hover">
+                    <h3>Noche de Degustación</h3>
+                    <p>Viernes 8PM - Explora 5 cervezas locales con maridajes especiales</p>
+                </div>
+                <div class="event-item glass-card liquid-hover">
+                    <h3>Música en Vivo</h3>
+                    <p>Sábado 9PM - Presentación de bandas locales</p>
+                </div>
+                <div class="event-item glass-card liquid-hover">
+                    <h3>Trivia Cervecera</h3>
+                    <p>Miércoles 8PM - Gana premios probando tu conocimiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact wood-background">
+        <div class="container">
+            <h2>Visítanos o Contáctanos</h2>
+            <div class="contact-content">
+                <div class="location-info glass-card">
+                    <h3>Ubicación</h3>
+                    <p>123 Calle Cerveza Artesanal<br>[Ciudad], [Estado] 12345</p>
+                    <p>Lunes a Jueves: 4:00 PM - 12:00 AM</p>
+                    <p>Viernes y Sábado: 4:00 PM - 2:00 AM</p>
+                    <p>Domingo: 12:00 PM - 10:00 PM</p>
+                </div>
+
+                <div class="contact-form glass-card">
+                    <h3>Reserva una Mesa</h3>
+                    <form id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Fecha</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Hora</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary liquid-hover">Reservar Ahora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Craft Beer Bar</h3>
+                    <p>El destino definitivo para amantes de la cerveza artesanal en [Ciudad].</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Teléfono: +34 123 456 789</p>
+                    <p>Email: hola@craftbeerbar.es</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Craft Beer Bar. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/maestro-script.js"></script>
+    <script src="js/advanced-animations.js"></script>
+    <script src="js/wooden-background.js"></script>
+</body>
+</html>
