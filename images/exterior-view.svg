@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Cielo nocturno -->
+  <rect width="600" height="200" fill="#1a237e"/>
+  
+  <!-- Estrellas -->
+  <circle cx="50" cy="30" r="1" fill="white"/>
+  <circle cx="100" cy="50" r="1.2" fill="white"/>
+  <circle cx="150" cy="20" r="0.8" fill="white"/>
+  <circle cx="200" cy="60" r="1" fill="white"/>
+  <circle cx="250" cy="40" r="1.1" fill="white"/>
+  <circle cx="300" cy="25" r="0.9" fill="white"/>
+  <circle cx="350" cy="55" r="1.2" fill="white"/>
+  <circle cx="400" cy="35" r="0.8" fill="white"/>
+  <circle cx="450" cy="65" r="1" fill="white"/>
+  <circle cx="500" cy="30" r="1.1" fill="white"/>
+  <circle cx="550" cy="45" r="0.9" fill="white"/>
+  
+  <!-- Luna -->
+  <circle cx="550" cy="50" r="15" fill="#e0e0e0"/>
+  <circle cx="555" cy="45" r="3" fill="#b0b0b0"/>
+  <circle cx="558" cy="52" r="2" fill="#b0b0b0"/>
+  <circle cx="548" cy="55" r="2.5" fill="#b0b0b0"/>
+  
+  <!-- Edificio del bar -->
+  <rect x="150" y="150" width="300" height="200" fill="#8b4513"/>
+  
+  <!-- Puerta principal -->
+  <rect x="275" y="250" width="50" height="100" fill="#5d4037"/>
+  <circle cx="280" cy="300" r="3" fill="#b87333"/>
+  
+  <!-- Ventanas -->
+  <rect x="180" y="180" width="40" height="40" fill="#ffec8b"/>
+  <rect x="240" y="180" width="40" height="40" fill="#ffec8b"/>
+  <rect x="300" y="180" width="40" height="40" fill="#ffec8b"/>
+  <rect x="360" y="180" width="40" height="40" fill="#ffec8b"/>
+  
+  <!-- Marco de ventanas -->
+  <rect x="178" y="178" width="44" height="44" fill="none" stroke="#5d4037" stroke-width="2"/>
+  <rect x="238" y="178" width="44" height="44" fill="none" stroke="#5d4037" stroke-width="2"/>
+  <rect x="298" y="178" width="44" height="44" fill="none" stroke="#5d4037" stroke-width="2"/>
+  <rect x="358" y="178" width="44" height="44" fill="none" stroke="#5d4037" stroke-width="2"/>
+  
+  <!-- Cartel del bar -->
+  <rect x="200" y="120" width="200" height="40" fill="#5d4037"/>
+  <text x="300" y="145" font-family="Arial" font-size="16" fill="#ffec8b" text-anchor="middle" font-weight="bold">CRAFT BEER BAR</text>
+  
+  <!-- Terraza exterior -->
+  <rect x="100" y="300" width="400" height="50" fill="#6d4c41"/>
+  
+  <!-- Mesas en la terraza -->
+  <rect x="150" y="310" width="30" height="30" fill="#5d4037"/>
+  <circle cx="165" cy="325" r="15" fill="#5d4037"/>
+  
+  <rect x="220" y="310" width="30" height="30" fill="#5d4037"/>
+  <circle cx="235" cy="325" r="15" fill="#5d4037"/>
+  
+  <rect x="290" y="310" width="30" height="30" fill="#5d4037"/>
+  <circle cx="305" cy="325" r="15" fill="#5d4037"/>
+  
+  <rect x="360" y="310" width="30" height="30" fill="#5d4037"/>
+  <circle cx="375" cy="325" r="15" fill="#5d4037"/>
+  
+  <!-- Personas en la terraza -->
+  <g transform="translate(160, 290)">
+    <circle cx="0" cy="0" r="8" fill="#f8d9b7"/>
+    <rect x="-5" y="8" width="10" height="15" fill="#3498db"/>
+    <rect x="-7" y="23" width="3" height="10" fill="#f8d9b7"/>
+    <rect x="4" y="23" width="3" height="10" fill="#f8d9b7"/>
+  </g>
+  
+  <g transform="translate(230, 290)">
+    <circle cx="0" cy="0" r="8" fill="#f8d9b7"/>
+    <rect x="-5" y="8" width="10" height="15" fill="#e74c3c"/>
+    <rect x="-7" y="23" width="3" height="10" fill="#f8d9b7"/>
+    <rect x="4" y="23" width="3" height="10" fill="#f8d9b7"/>
+  </g>
+  
+  <!-- Farolas -->
+  <rect x="80" y="250" width="5" height="100" fill="#5d4037"/>
+  <circle cx="82.5" cy="245" r="10" fill="#ffec8b" opacity="0.7"/>
+  
+  <rect x="515" y="250" width="5" height="100" fill="#5d4037"/>
+  <circle cx="517.5" cy="245" r="10" fill="#ffec8b" opacity="0.7"/>
+  
+  <!-- Calle -->
+  <rect x="0" y="350" width="600" height="50" fill="#424242"/>
+  
+  <!-- Línea divisoria -->
+  <rect x="0" y="370" width="600" height="5" fill="#ffec8b"/>
+  
+  <!-- Coches -->
+  <rect x="100" y="360" width="60" height="25" fill="#3498db"/>
+  <circle cx="115" cy="385" r="8" fill="#2c3e50"/>
+  <circle cx="145" cy="385" r="8" fill="#2c3e50"/>
+  
+  <rect x="400" y="360" width="60" height="25" fill="#e74c3c"/>
+  <circle cx="415" cy="385" r="8" fill="#2c3e50"/>
+  <circle cx="445" cy="385" r="8" fill="#2c3e50"/>
+</svg>

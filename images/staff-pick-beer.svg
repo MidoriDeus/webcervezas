@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Jarra de cerveza especial -->
+  <path d="M60,80 L80,280 L120,280 L140,80 Z" fill="#f5deb3"/>
+  
+  <!-- Espuma dorada -->
+  <path d="M60,80 Q80,60 100,70 Q120,60 140,80 Q130,65 115,60 Q95,55 80,60 Q65,65 60,80" fill="#ffd700"/>
+  
+  <!-- Líquido de Stout envejecido en barrica (color marrón oscuro) -->
+  <path d="M65,85 L75,275 L125,275 L135,85 Z" fill="#4b3621"/>
+  
+  <!-- Burbujas elegantes -->
+  <circle cx="90" cy="120" r="2.5" fill="#fff"/>
+  <circle cx="100" cy="150" r="2" fill="#fff"/>
+  <circle cx="85" cy="180" r="2.5" fill="#fff"/>
+  <circle cx="105" cy="210" r="2" fill="#fff"/>
+  <circle cx="95" cy="240" r="2.5" fill="#fff"/>
+  
+  <!-- Etiqueta de selección del mes -->
+  <rect x="80" y="100" width="40" height="25" rx="5" fill="#ffbf00"/>
+  <text x="100" y="118" font-family="Arial" font-size="10" fill="#3e2723" text-anchor="middle" font-weight="bold">MES</text>
+  
+  <!-- Etiqueta de la cerveza -->
+  <rect x="85" y="140" width="30" height="20" rx="3" fill="#8b4513" opacity="0.7"/>
+  <text x="100" y="155" font-family="Arial" font-size="8" fill="white" text-anchor="middle">B.A. STOUT</text>
+</svg>

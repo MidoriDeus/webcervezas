@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Fondo de madera -->
+  <rect width="600" height="400" fill="#8b4513"/>
+  
+  <!-- Barras de madera -->
+  <rect x="0" y="0" width="600" height="20" fill="#a0522d"/>
+  <rect x="0" y="40" width="600" height="15" fill="#8b4513"/>
+  <rect x="0" y="80" width="600" height="20" fill="#a0522d"/>
+  <rect x="0" y="130" width="600" height="15" fill="#8b4513"/>
+  <rect x="0" y="170" width="600" height="20" fill="#a0522d"/>
+  <rect x="0" y="220" width="600" height="15" fill="#8b4513"/>
+  <rect x="0" y="260" width="600" height="20" fill="#a0522d"/>
+  <rect x="0" y="310" width="600" height="15" fill="#8b4513"/>
+  <rect x="0" y="350" width="600" height="20" fill="#a0522d"/>
+  
+  <!-- Barra del bar -->
+  <rect x="0" y="300" width="600" height="100" fill="#5d4037"/>
+  
+  <!-- Grifos de cerveza -->
+  <g transform="translate(50, 280)">
+    <rect x="0" y="0" width="30" height="20" fill="#b87333"/>
+    <rect x="5" y="-30" width="5" height="30" fill="#b87333"/>
+    <circle cx="7.5" cy="-35" r="5" fill="#ffbf00"/>
+  </g>
+  
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="30" height="20" fill="#b87333"/>
+    <rect x="5" y="-30" width="5" height="30" fill="#b87333"/>
+    <circle cx="7.5" cy="-35" r="5" fill="#ffec8b"/>
+  </g>
+  
+  <g transform="translate(150, 280)">
+    <rect x="0" y="0" width="30" height="20" fill="#b87333"/>
+    <rect x="5" y="-30" width="5" height="30" fill="#b87333"/>
+    <circle cx="7.5" cy="-35" r="5" fill="#d2691e"/>
+  </g>
+  
+  <g transform="translate(200, 280)">
+    <rect x="0" y="0" width="30" height="20" fill="#b87333"/>
+    <rect x="5" y="-30" width="5" height="30" fill="#b87333"/>
+    <circle cx="7.5" cy="-35" r="5" fill="#1c1c1c"/>
+  </g>
+  
+  <g transform="translate(250, 280)">
+    <rect x="0" y="0" width="30" height="20" fill="#b87333"/>
+    <rect x="5" y="-30" width="5" height="30" fill="#b87333"/>
+    <circle cx="7.5" cy="-35" r="5" fill="#ffc0cb"/>
+  </g>
+  
+  <!-- Mesa de madera -->
+  <rect x="400" y="250" width="150" height="100" rx="10" ry="10" fill="#654321"/>
+  
+  <!-- Jarras en la mesa -->
+  <g transform="translate(430, 230)">
+    <path d="M15,20 L25,180 L35,180 L45,20 Z" fill="#f5deb3"/>
+    <path d="M15,20 Q25,10 35,15 Q45,10 50,20 Q45,12 40,10 Q30,8 20,10 Q15,12 15,20" fill="#fff8e1"/>
+    <path d="M20,25 L25,175 L35,175 L40,25 Z" fill="#ffd700"/>
+    <circle cx="30" cy="50" r="1.5" fill="#fff"/>
+  </g>
+  
+  <g transform="translate(490, 230)">
+    <path d="M15,20 L25,180 L35,180 L45,20 Z" fill="#f5deb3"/>
+    <path d="M15,20 Q25,10 35,15 Q45,10 50,20 Q45,12 40,10 Q30,8 20,10 Q15,12 15,20" fill="#fff8e1"/>
+    <path d="M20,25 L25,175 L35,175 L40,25 Z" fill="#d2691e"/>
+    <circle cx="30" cy="50" r="1.5" fill="#fff"/>
+  </g>
+  
+  <!-- Iluminación cálida -->
+  <circle cx="300" cy="50" r="80" fill="#ffec8b" opacity="0.2"/>
+  <circle cx="150" cy="100" r="60" fill="#ffec8b" opacity="0.15"/>
+  <circle cx="450" cy="150" r="70" fill="#ffec8b" opacity="0.15"/>
+  
+  <!-- Decoración de pared -->
+  <rect x="50" y="50" width="100" height="100" fill="#5d432c" stroke="#3e2723" stroke-width="2"/>
+  <text x="100" y="105" font-family="Arial" font-size="14" fill="#ffec8b" text-anchor="middle">CRAFT</text>
+  
+  <!-- Estantería con botellas -->
+  <rect x="350" y="80" width="200" height="120" fill="#5d432c" stroke="#3e2723" stroke-width="2"/>
+  <g transform="translate(370, 100)">
+    <rect x="0" y="0" width="15" height="60" fill="#1c1c1c"/>
+    <rect x="25" y="0" width="15" height="60" fill="#d2691e"/>
+    <rect x="50" y="0" width="15" height="60" fill="#ffd700"/>
+    <rect x="75" y="0" width="15" height="60" fill="#ffec8b"/>
+    <rect x="100" y="0" width="15" height="60" fill="#ffc0cb"/>
+  </g>
+</svg>

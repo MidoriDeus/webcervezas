@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Jarra de cerveza -->
+  <path d="M60,80 L80,280 L120,280 L140,80 Z" fill="#f5deb3"/>
+  
+  <!-- Espuma gruesa -->
+  <path d="M60,80 Q70,65 85,60 Q100,55 115,60 Q130,65 140,80 Q130,68 115,65 Q100,62 85,65 Q70,68 60,80" fill="#fff8e1"/>
+  
+  <!-- Líquido de Resin IPA (color dorado intenso) -->
+  <path d="M65,85 L75,275 L125,275 L135,85 Z" fill="#daa520"/>
+  
+  <!-- Burbujas de lúpulo -->
+  <circle cx="90" cy="120" r="3" fill="#fff"/>
+  <circle cx="100" cy="150" r="2.5" fill="#fff"/>
+  <circle cx="85" cy="180" r="3" fill="#fff"/>
+  <circle cx="105" cy="210" r="2.5" fill="#fff"/>
+  <circle cx="95" cy="240" r="3" fill="#fff"/>
+  
+  <!-- Partículas de lúpulo -->
+  <circle cx="92" cy="130" r="1" fill="#556b2f"/>
+  <circle cx="102" cy="160" r="1" fill="#556b2f"/>
+  <circle cx="88" cy="190" r="1" fill="#556b2f"/>
+  <circle cx="108" cy="220" r="1" fill="#556b2f"/>
+  
+  <!-- Etiqueta de la cerveza -->
+  <rect x="85" y="140" width="30" height="20" rx="3" fill="#8b4513" opacity="0.7"/>
+  <text x="100" y="155" font-family="Arial" font-size="8" fill="white" text-anchor="middle">RESIN</text>
+</svg>
